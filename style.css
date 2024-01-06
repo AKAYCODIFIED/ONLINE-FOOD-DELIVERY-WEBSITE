@@ -1,0 +1,284 @@
+/* css reset 1st step  */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    /* it is for smooth scrolling  */
+}
+
+/* variables for css */
+/* not necessary  */
+:root {
+    --navheight: 20px;
+}
+
+/* navigation bar  */
+#navbar {
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+
+/* logo  */
+#logo {
+    margin: 14px -50px;
+}
+
+/* logo image  */
+#logo img {
+    margin: -14px 30px;
+    height: 150px;
+    border-radius: 32px;
+}
+
+/* nav bar list  */
+
+#navbar ul {
+    display: flex;
+    margin: 0px 50px;
+    font-family: 'Baloo Bhai', cursive;
+}
+
+/* note here we apply display to ul because list are present in ul tag  */
+#navbar::before {
+    content: "";
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.4rem;
+}
+
+#navbar ul li a {
+    color: white;
+    display: block;
+    /* because it is an inline elem by default  */
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 18px;
+}
+
+/* note here we apply padding to a because we want to use hover property */
+#navbar ul li a:hover {
+    color: magenta;
+    background-color: white;
+}
+
+/* Home Section  */
+#home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3px 180px;
+    height: 450px;
+}
+
+#home::before {
+    content: "";
+    background: url('food-366875_1280.jpg') no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 600px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
+
+}
+
+#home h1 {
+    color: white;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+
+}
+
+#home p {
+    color: white;
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: 'Bree Serif', serif;
+}
+
+/* services section  */
+
+
+
+#services {
+    margin: 80px;
+    display: flex;
+
+}
+
+#services .box {
+    border: 2px solid red;
+    padding: 40px;
+    margin: -30px 6px;
+    border-radius: 25px;
+    background-color: #f3f5f1;
+
+}
+
+#services .box img {
+    height: 150px;
+    margin: auto;
+    display: block;
+    border-radius: 20px;
+}
+
+#services .box p {
+    font-family: 'Bree Serif', serif;
+}
+
+/* clients section  */
+#client-section {
+    position: relative;
+
+
+}
+
+#client-section::before {
+    content: "";
+    position: absolute;
+    background: url('vegetable-skewer-3317060_1280.jpg');
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+#client {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#client img {
+    height: 150px;
+    border-radius: 23px;
+    border: 3px solid cyan;
+}
+
+.client-items {
+    padding: 40px;
+
+}
+
+/* contact section  */
+#contact {
+    position: relative;
+}
+
+#contact::before {
+    content: "";
+    position: absolute;
+    background: url('contact-us-2993000_1280.jpg') no-repeat center center/cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+#contact-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+
+#contact-box input,
+#contact-box textarea {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    border: 3px solid rgb(157, 6, 238);
+}
+
+#contact-box form {
+    width: 40%;
+}
+
+#contact-box label {
+    font-size: 1.5rem;
+    font-family: 'Bree Serif', serif;
+}
+
+#contact-box button {
+    display: block;
+    border: 3px solid rgb(157, 6, 238);
+    background-color: grey;
+    color: yellow;
+    padding: 4px 15px;
+    margin: 5px auto;
+    font-size: 1.6rem;
+    font-family: 'Bree Serif', serif;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+
+
+
+
+/* footer  */
+footer {
+    background-color: black;
+    color: white;
+    padding: 8px 20px;
+    font-size: 1.1rem;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* we can also use classes to make our code reusable  */
+.prim {
+    font-size: 3.8rem;
+    font-family: 'Bree Serif', serif;
+    padding: 10px;
+}
+
+.seco {
+    font-size: 2.1rem;
+    font-family: 'Bree Serif', serif;
+    padding: 10px;
+}
+
+.btn {
+    border: 3px solid rgb(157, 6, 238);
+    background-color: grey;
+    color: lime;
+    padding: 4px 15px;
+    margin: 17px;
+    font-size: 1.6rem;
+    font-family: 'Bree Serif', serif;
+    border-radius: 12px;
+    cursor: pointer;
+
+}
+
+.cent {
+    text-align: center;
+}
