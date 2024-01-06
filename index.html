@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROJECT2</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Baloo Bhai' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Bree Serif' rel='stylesheet'>
+    <!-- this is a way to inject phone css with media querries  -->
+    <link rel="stylesheet" media="screen and (max-width:1200px)" href="phone.css">
+</head>
+
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="download 2.png" alt="MealDeal.com">
+        </div>
+        <ul>
+            <li class="items"><a href="#home">Home</a></li>
+            <li class="items"><a href="#services-section">Services</a></li>
+            <li class="items"><a href="#">Deals</a></li>
+            <li class="items"><a href="#client-section">Clients</a></li>
+            <li class="items"><a href="#contact">Contact Us</a></li>
+            <!-- remember we use # means it link to nothing  -->
+            <!-- #home will go to home on clicking home  -->
+        </ul>
+    </nav>
+    <section id="home">
+        <h1 class="prim">Welcome to OnlineFoodLelo </h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi esse porro </p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing .</p>
+        <form action="backend.php">
+            <button class="btn">Order Now</button>
+        </form>
+
+    </section>
+    <section id="services-section">
+        <h1 class="prim cent">Our Services</h1>
+        <div id="services">
+            <div class="box">
+                <img src="download (4).jpeg" alt="">
+                <h2 class="seco cent">Food Ordering</h2>
+                <p class="cent">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, repellendus molestiae?
+                    Suscipit expedita neque laudantium obcaecati beatae culpa, optio blanditiis magni, dolorum debitis
+                    excepturi soluta id consequuntur </p>
+            </div>
+            <div class="box">
+                <img src="place-setting-2110245_1280.jpg" alt="">
+                <h2 class="seco cent">Food Dining</h2>
+                <p class="cent">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, repellendus molestiae?
+                    Suscipit expedita neque laudantium obcaecati beatae culpa, optio blanditiis magni, dolorum debitis
+                    excepturi soluta id consequuntur </p>
+            </div>
+            <div class="box">
+                <img src="curbside-5044977_1280.png" alt="">
+                <h2 class="seco cent">Instamart</h2>
+                <p class="cent">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, repellendus molestiae?
+                    Suscipit expedita neque laudantium obcaecati beatae culpa, optio blanditiis magni, dolorum debitis
+                    excepturi soluta id consequuntur </p>
+            </div>
+        </div>
+        </h1>
+
+    </section>
+    <section id="client-section">
+        <h1 class="prim cent">Our Clients</h1>
+        <div id="client">
+            <div class="client-items">
+                <img src="download.png" alt="OUR CLIENTS">
+            </div>
+            <div class="client-items">
+                <img src="Blinkit-yellow-rounded.svg" alt="OUR CLIENTS">
+            </div>
+            <div class="client-items">
+                <img src="Swiggy_logo.png" alt="OUR CLIENTS">
+            </div>
+            <div class="client-items">
+                <img src="Microsoft_logo.svg.png" alt="OUR CLIENTS">
+            </div>
+            <div class="client-items">
+                <img src="Zomato_logo.png" alt="OUR CLIENTS">
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <h1 class="prim cent">
+            Contact Us
+        </h1>
+        <div id="contact-box">
+            <form action="backend.php">
+                <div class="forms-group">
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" id="name" placeholder="Enter your Name">
+                </div>
+                <div class="forms-group">
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" placeholder="Enter your Email">
+                </div>
+                <div class="forms-group">
+                    <label for="phone">Phone:</label>
+                    <input type="text" name="phone" id="phone" placeholder="Enter your Phone No">
+                </div>
+                <div class="forms-group">
+                    <label for="feedback">Feedback:</label>
+                    <textarea name="feedback" id="feedback" cols="30" rows="10"></textarea>
+                </div>
+                <div class="forms-group">
+                    <button type="submit">Submit</button>
+                </div>
+
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="foot cent">
+            Copywright &copy; www.OnlineFoodLelo.com All rights reserved!
+            <!-- &copy is used to add a copywright to your website  -->
+        </div>
+    </footer>
+</body>
+
+</html>
